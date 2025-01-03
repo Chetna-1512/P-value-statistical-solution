@@ -101,5 +101,5 @@ server <- function(input, output) {
 shinyApp(ui = ui, server = server)
 
 # Sample data to run the application
-df = data.frame(Sub = result$Sub, Trmt = result$Trmt, Cmax = result$Cmax, AUCt = result$AUCt, AUCi = result$AUCi)
-write.csv(df, "df.csv", row.names = FALSE)
+Sample_data = data.frame(Sub = result$Sub, Trmt = result$Trmt, Cmax = result$Cmax, AUCt = result$AUCt, AUCi = result$AUCi)
+write.csv(Sample_data, "Sample_data.csv", row.names = FALSE)
